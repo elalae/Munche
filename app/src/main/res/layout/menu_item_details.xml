@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/foodMark"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/foodMark"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/open_sans_semibold"
+        android:textSize="15sp"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/itemCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/foodMark"
+        android:layout_below="@+id/itemName"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/open_sans_light"
+        android:textSize="12sp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/gray"/>
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemCategory"
+        android:layout_toEndOf="@+id/foodMark"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/open_sans"
+        android:textColor="@color/gray"
+        android:textSize="12sp"/>
+
+    <Switch
+        android:id="@+id/itemActiveSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="11dp"/>
+
+    <ImageView
+        android:id="@+id/editMenuItem"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_above="@+id/menuItemDivider"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="3dp"
+        android:src="@drawable/edit_menu_icon" />
+
+    <View
+        android:id="@+id/menuItemDivider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/itemPrice"
+        android:layout_marginTop="9dp"/>
+
+</RelativeLayout>
